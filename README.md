@@ -1,9 +1,37 @@
 # docker-emr-poc
 
-## Running an example
+### Installation (OSX)
+```
+# install Docker through brew and create a default machine
+brew install docker
+brew install docker-machine
+docker-machine create --driver virtualbox default
+
+# pull docker image
+docker pull silviaterra/emr-poc
+
+# install python deps
+pip install -r requirements/base.txt
+pip-sync requirements/base.txt
+```
+
+## Running a mapreduce job locally
+```
+echo bilbo | python mr_demo.py
+```
+
+## Using utils/docker.py
 ```
 python -c "from utils import docker; print docker.run_my_cmd(['python', '/opt/docker-emr-poc/demo.py', 'Bilbo'])"
 # Returns: {u'status': u'OK', u'message': u'Howdy there Bilbo', u'a number': 5}
+```
+
+## Updating requirements
+```
+# update requirements/base.in
+# ...
+
+pip-compile requirements/base.in > requirements/base.txt
 ```
 
 ## Updating Docker Image
