@@ -36,7 +36,6 @@ def execute(cmd):
         TIMEOUT_FUNC, '-s', 'SIGKILL', TIMEOUT,
         'docker', 'run', '--rm', '--name', container_name, DOCKER_IMAGE
     ]
-    docker_prefix = []  # TODO remove
 
     p = Popen(docker_prefix + cmd, stdout=PIPE, stderr=PIPE)
 
