@@ -2,6 +2,8 @@
 
 ### Installation (OSX)
 ```
+mkdir ~/docker-mnt
+
 # install Docker through brew and create a default machine
 brew install docker
 brew install docker-machine
@@ -13,6 +15,14 @@ docker pull silviaterra/emr-poc
 # install python deps
 pip install -r requirements/base.txt
 pip-sync requirements/base.txt
+```
+
+## Running a mapreduce job on EMR
+```
+echo bilbo | python mr_demo.py -r emr \
+    --ec2-master-instance-type m3.xlarge \
+    --num-ec2-core-instances 1 \
+    --ec2-core-instance-type m3.xlarge
 ```
 
 ## Running a mapreduce job locally
