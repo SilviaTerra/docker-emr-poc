@@ -10,6 +10,6 @@ filechunkio==1.6          # via mrjob
 first==2.0.1              # via pip-tools
 mrjob==0.4.6
 pip-tools==1.6
-PyYAML==3.11              # via mrjob
+pyyaml==5.1               # via mrjob
 simplejson==3.8.2         # via mrjob
 six==1.10.0               # via pip-tools
