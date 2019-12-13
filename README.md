@@ -1,3 +1,26 @@
+#
+#
+#
+#
+***
+
+# DEAD REPOSITORY - DO NOT USE
+
+***
+#
+#
+#
+#
+
+
+
+
+
+
+
+
+
+
 # docker-emr-poc
 
 ### Installation (OSX)
