@@ -4,12 +4,21 @@
 #
 #    pip-compile base.in
 #
-boto==2.39.0              # via mrjob
-click==6.3                # via pip-tools
-filechunkio==1.6          # via mrjob
-first==2.0.1              # via pip-tools
+boto==2.39.0
+    # via mrjob
+click==6.3
+    # via pip-tools
+filechunkio==1.6
+    # via mrjob
+first==2.0.1
+    # via pip-tools
 mrjob==0.4.6
+    # via -r base.in
 pip-tools==1.6
-PyYAML==3.11              # via mrjob
-simplejson==3.8.2         # via mrjob
-six==1.10.0               # via pip-tools
+    # via -r base.in
+pyyaml==5.4
+    # via mrjob
+simplejson==3.8.2
+    # via mrjob
+six==1.10.0
+    # via pip-tools
